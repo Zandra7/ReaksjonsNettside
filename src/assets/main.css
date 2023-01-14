@@ -1,0 +1,100 @@
+@import './base.css';
+
+body {
+  background-color: #d6e2dd;
+}
+
+.main {
+  margin: 2% 10%;
+}
+
+button {
+  margin-bottom: 2%;
+  color: white;
+  background-color: #272a29;
+}
+
+.Icon {
+  width: 80%;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+                    "a b c d"
+                    "f g h i";
+  padding: 10px;
+}
+
+.emoji { grid-area: a; }
+
+.heart { grid-area: b; }
+
+.uparrow { grid-area: c; }
+
+.downarrow { grid-area: d; }
+
+.emojiNumber { grid-area: f; 
+  margin-left: 37%;}
+
+.heartNumber { grid-area: g; 
+  margin-left: 37%;}
+
+.uparrowNumber { grid-area: h; 
+  margin-left: 37%;}
+
+.downarrowNumber { grid-area: i; 
+  margin-left: 37%; }
+
+  .rooms {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100px;
+    background-color: #f1f1f1;
+    grid-area: j;
+    margin-top: -10%; 
+    background-color: #272a29;
+  }
+  
+  li a {
+    display: block;
+    color: #000;
+    padding: 6% 12%;
+    text-decoration: none;
+    font-weight: 425;
+    color: white;
+    
+  }
+  
+  li a.active {
+    background-color: #9fcbbb;
+    color: black;
+    outline: black;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: rgb(197, 197, 197);
+    color: white;
+
+  }
+
+  .Reactions {
+    margin-top: -1%;
+  }
+  
+  .names {
+    list-style-type: none;
+    margin-left: 2%;
+  }
+
+  input {
+    width: 20%;
+    margin-bottom: 2%;
+    box-sizing: border-box;
+    padding: 12px 20px;
+    border: 3px solid #9fcbbb;
+    
+  }
